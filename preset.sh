@@ -11,7 +11,7 @@ nvidia="N"
 nouveau="N"
 
 ### yay or paru 
-aur_helper="yay"
+aur_helper="paru"
 
 ###-Install GTK themes (required for Dark/Light function)?
 gtk_themes="Y"

@@ -2,7 +2,7 @@
 # 💫 https://github.com/JaKooLit 💫 #
 # Hyprland Packages #
 
-# edit your packages desired here. 
+# edit your packages desired here.
 # WARNING! If you remove packages here, dotfiles may not work properly.
 # and also, ensure that packages are present in AUR and official Arch Repo
 
@@ -11,25 +11,24 @@ Extra=(
 
 )
 
-hypr_package=( 
+hypr_package=(
   #aylurs-gtk-shell
   bc
   cliphist
-  curl 
-  grim 
-  gvfs 
+  curl
+  grim
+  gvfs
   gvfs-mtp
   hyprpolkitagent
   imagemagick
-  inxi 
+  inxi
   jq
   kitty
   kvantum
-  nano  
-  network-manager-applet 
-  pamixer 
+  network-manager-applet
+  pamixer
   pavucontrol
-  pipewire-alsa 
+  pipewire-alsa
   playerctl
   python-requests
   python-pyquery
@@ -37,39 +36,64 @@ hypr_package=(
   qt6ct
   qt6-svg
   rofi-wayland
-  slurp 
-  swappy 
-  swaync 
+  slurp
+  swappy
+  swaync
   swww
   unzip # needed later
-  wallust 
+  wallust
   waybar
   wget
   wl-clipboard
   wlogout
   xdg-user-dirs
-  xdg-utils 
+  xdg-utils
   yad
 )
 
 # the following packages can be deleted. however, dotfiles may not work properly
-hypr_package_2=(
-  brightnessctl 
+hypr_package_2=(      p
+  brightnessctl
   btop
   cava
   loupe
   fastfetch
   gnome-system-monitor
-  mousepad 
+  mousepad
   mpv
-  mpv-mpris 
+  mpv-mpris
   nvtop
   nwg-look
   nwg-displays
   pacman-contrib
   qalculate-gtk
-  vim
+  neovim
   yt-dlp
+  cheat-bin
+  fcitx5
+  fcitx5-breeze
+  fcitx5-qt
+  fcitx5-rime
+  clash-verge
+  chatbox-bin
+  openssh
+  yazi
+  openconnect
+  networkmanager-openconnect
+  feh
+  feishu-bin
+  flameshot-git
+  downgrade
+  dbeaver-ee
+  chafa
+  eza
+  bdu
+  jdk17-openjdk
+  jenv
+  microsoft-edge-stable-bin
+  ripgrep
+  tmux
+  zoxide
 )
 
 # List of packages to uninstall as it conflicts some packages
@@ -86,7 +110,7 @@ uninstall=(
 
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
 # Determine the directory where the script is located
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Change the working directory to the parent directory of the script
 PARENT_DIR="$SCRIPT_DIR/.."
